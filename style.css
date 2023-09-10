@@ -19,6 +19,7 @@ header{
     align-items: center;
     justify-content: space-between;
     color: var(--white);
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.06); 
 }
 header h1{
     padding-left: 20px;
@@ -78,6 +79,7 @@ section{
     border-radius: 20px;
     padding: 50px 25px;
     position: relative;
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.04);
 }
 .line1::before {
     content: '';
@@ -143,6 +145,13 @@ section{
     color: var(--white);
 }
 
+.card-plan h3,
+.card-plan h5,
+.card-plan ul,
+.card-plan li {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra suave ao texto */
+}
+
 footer{
     background: var(--prim-cl);
     display: flex;
@@ -158,3 +167,4 @@ footer a:hover{
     color: var(--prim-stgr);
     transition: .3s;
 }
+
