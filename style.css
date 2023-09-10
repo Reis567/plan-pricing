@@ -43,17 +43,21 @@ section{
 .navbar{
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 30px;
     padding-right: 40px;
 }
 .navbar .nav-item{
     color: var(--white);
 }
+.nav-item{
+    padding: 6px 10px;
+    background-color: var(--prim-cl);
+}
 .nav-item:hover{
-    padding: 4px 8px;
+    padding: 6px 10px;
     background-color: var(--sec-cl);
     transition: .3s;
-    border-radius: 3px;
+    border-radius: 5px;
     color: var(--prim-stgr);
     cursor: pointer;
 }
@@ -133,6 +137,11 @@ section{
     color: var(--prim-stgr);
     font-weight: bold;
 }
+.card-plan a:hover{
+    background: var(--prim-stgr);
+    transition: .3s;
+    color: var(--white);
+}
 
 footer{
     background: var(--prim-cl);
@@ -144,4 +153,8 @@ footer{
 }
 footer a{
     color: var(--white);
+}
+footer a:hover{
+    color: var(--prim-stgr);
+    transition: .3s;
 }
