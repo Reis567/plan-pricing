@@ -37,6 +37,7 @@ section{
 .content h1{
     font-size: 80px;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .navbar{
@@ -53,6 +54,27 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+}
+
+.card-plan{
+    display: flex;
+    flex-direction: column;
+    background: var(--prim-cl);
+    border-radius: 20px;
+    padding: 50px 25px;
+}
+.card-plan a{
+    margin-top: 20px;
+    background: var(--sec-stgr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--prim-stgr);
+    font-weight: bold;
+
 }
 
 footer{
