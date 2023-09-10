@@ -128,7 +128,7 @@ section{
 .card-plan li::marker {
     color: var(--sec-cl); /* Define a cor das bolinhas, neste caso, vermelho */
 }
-.card-plan a{
+.btn-veja-mais {
     margin-top: 20px;
     background: var(--sec-cl);
     display: flex;
@@ -139,7 +139,7 @@ section{
     color: var(--prim-stgr);
     font-weight: bold;
 }
-.card-plan a:hover{
+.btn-veja-mais:hover{
     background: var(--prim-stgr);
     transition: .3s;
     color: var(--white);
@@ -169,14 +169,71 @@ footer a:hover{
 }
 
 
-
 @media (max-width: 767px) {
+    header{
+        z-index: 1;
+    }
     .content h1 {
-        font-size: 30px; /* Diminui ainda mais o tamanho do título principal */
+        font-size: 24px; /* Diminui mais o tamanho do título principal */
+    }
+
+    .card-plan {
+        padding: 10px; /* Diminui mais o espaçamento interno */
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra ainda mais suave */
+    }
+
+    .card-plan h3 {
+        font-size: 16px; /* Diminui ainda mais o tamanho do título */
+        margin-bottom: 10px;
+    }
+
+    .card-plan h5 {
+        font-size: 12px; /* Diminui ainda mais o tamanho do preço */
+    }
+
+    .card-plan h5 span {
+        font-size: 8px; /* Diminui ainda mais o tamanho da descrição de preço */
+    }
+
+    .card-plan ul {
+        margin: 6px 6px; /* Diminui ainda mais a margem interna da lista */
+    }
+    .btn-veja-mais{
+        padding: 1px 2px;
+        font-size: 8px;
+    }
+
+    .card-plan li {
+        font-size: 8px; /* Diminui ainda mais o tamanho do texto da lista */
+    }
+
+    .line1::before {
+        content: '';
+        top: 19%;
+    }
+    .line2::before {
+        content: '';
+        top: 19%;
+    }
+    .line3::before {
+        content: '';
+        top: 17%;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    header{
+        z-index: 1;
+    }
+    .content h1 {
+        font-size: 40px; /* Diminui ainda mais o tamanho do título principal */
     }
 
     .card-plan {
         padding: 15px 15px; /* Diminui mais o espaçamento interno */
+        margin-left: 20px;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra ainda mais suave */
     }
 
@@ -212,13 +269,4 @@ footer a:hover{
         content: '';
         top: 17%;
     }
-}
-
-
-@media (min-width: 768px) and (max-width: 1023px) {
-    /* Estilos para tablets em orientação retrato aqui */
-}
-
-@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
-    /* Estilos para tablets em orientação paisagem aqui */
 }
