@@ -63,6 +63,42 @@ section{
     background: var(--prim-cl);
     border-radius: 20px;
     padding: 50px 25px;
+    position: relative;
+}
+.line1::before {
+    content: '';
+    height: 3px; 
+    width: 95%; 
+    background-color: var(--sec-cl);
+    position: absolute;
+    top: 24%;
+    left: 3%;
+}
+.line2::before {
+    content: '';
+    height: 3px; 
+    width: 95%; 
+    background-color: var(--sec-cl);
+    position: absolute;
+    top: 24%;
+    left: 3%;
+}
+.line3::before {
+    content: '';
+    height: 3px; 
+    width: 95%; 
+    background-color: var(--sec-cl);
+    position: absolute;
+    top: 22%;
+    left: 3%;
+}
+.card-plan h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom : 20px ;
+}
+.card-plan h5{
+    font-size: 20px;
 }
 .card-plan ul{
     list-style: disc;
