@@ -64,6 +64,13 @@ section{
     border-radius: 20px;
     padding: 50px 25px;
 }
+.card-plan ul{
+    list-style: disc;
+    margin: 20px 10px;
+}
+.card-plan li::marker {
+    color: var(--sec-cl); /* Define a cor das bolinhas, neste caso, vermelho */
+}
 .card-plan a{
     margin-top: 20px;
     background: var(--sec-stgr);
