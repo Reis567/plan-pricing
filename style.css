@@ -169,9 +169,52 @@ footer a:hover{
 }
 
 
+.hamburguer{
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid var(--white);
+    cursor: pointer;
+}
+.hamburguer::before,
+.hamburguer::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: var(--white);
+    margin-top: 5px;
+}
+
 @media (max-width: 767px) {
     header{
         z-index: 1;
+    }
+    .hamburguer{
+        display: block;
+        margin-right: 20px;
+    }
+    .navbar{
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: var(--prim-cl);
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+    header.active .navbar{
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
     }
     .content h1 {
         font-size: 24px; /* Diminui mais o tamanho do título principal */
