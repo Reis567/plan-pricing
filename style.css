@@ -25,10 +25,18 @@ header h1{
 }
 
 section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-top: 50px;
     height: 100vh;
     background: var(--prim-stgr);
     color: var(--white);
+}
+.content h1{
+    font-size: 80px;
+    text-transform: uppercase;
 }
 
 .navbar{
@@ -39,6 +47,12 @@ section{
 }
 .navbar .nav-item{
     color: var(--white);
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer{
