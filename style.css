@@ -10,7 +10,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 header{
-    height: 50px;
+    height: 70px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -29,7 +29,7 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 70px;
     height: 100vh;
     background: var(--prim-stgr);
     color: var(--white);
@@ -43,14 +43,24 @@ section{
 .navbar{
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 50px;
     padding-right: 40px;
 }
 .navbar .nav-item{
     color: var(--white);
 }
+.nav-item:hover{
+    padding: 4px 8px;
+    background-color: var(--sec-cl);
+    transition: .3s;
+    border-radius: 3px;
+    color: var(--prim-stgr);
+    cursor: pointer;
+}
+
 
 .cards{
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +108,12 @@ section{
     margin-bottom : 20px ;
 }
 .card-plan h5{
-    font-size: 20px;
+    font-size: 30px;
+    
+}
+.card-plan h5 span{
+    font-size: 13px;
+    letter-spacing: 2px;
 }
 .card-plan ul{
     list-style: disc;
@@ -109,7 +124,7 @@ section{
 }
 .card-plan a{
     margin-top: 20px;
-    background: var(--sec-stgr);
+    background: var(--sec-cl);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,7 +132,6 @@ section{
     border-radius: 10px;
     color: var(--prim-stgr);
     font-weight: bold;
-
 }
 
 footer{
